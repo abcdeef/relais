@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="system.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <script src="system.js"></script>
+        <script src="meins.js"></script>
+    </head>
+    <body>
+    	<div class="header"><i onclick="javascript:location.href='/'" class="bi bi-arrow-left-circle"></i></div>
+    	<div class="body">
+	        <table id="gpio"></table>
+    	    	<table id="system">
+    	    		<tr><td>localtime:</td><td></td></tr>
+    	    		<tr><td>uptime:</td><td></td></tr>
+    	    		<tr><td>RTC:</td><td></td></tr>
+   	    		<tr><td>Pegel:</td><td></td></tr>
+    	    	</table>
+        	<div id="programme"></div>
+        	<div id="cron"></div>
+        	<div id="debug"></div>
+        </div>
+        <div id="pegel_a"><div id="pegel_b"></div></div>
+        <button onclick="websocket.send(new Uint8Array([99]).buffer)" class="footer"><span>restart</span></button>
+    </body>
+</html>

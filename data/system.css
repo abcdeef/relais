@@ -1,0 +1,49 @@
+.sel {
+	background-color: green;
+    color: white;
+}
+tr td:nth-child(3),tr td:nth-child(4) {
+	text-align: center;
+}
+.tr {
+	background-color: #dfdcdc;
+}
+input {
+    width: 50px;
+}
+.header {
+    background-color: #2196F3;
+}
+body {
+	display: grid;
+	grid-template-rows: 56px auto;
+	margin: 0;
+}
+.bi-arrow-left-circle {
+    color: white;
+    font-size: 30px;
+    position: fixed;
+	left: 15px;
+	top: 12px;
+}
+#gpio {
+	margin: auto;
+}
+.footer {
+    background-color: #2196F3;
+    color: white;
+    position: fixed;
+    bottom: 0px;
+    font-size: 30px;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    padding: 12px;
+}
+#pegel_a {
+    overflow: clip;
+}
+#pegel_b {
+    background-color: green;
+    height: 40px;
+}

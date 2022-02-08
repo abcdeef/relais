@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>relais</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <script src="index.js"></script>
+        <script src="meins.js"></script>
+    </head>
+    <body>
+        <div class="grid-container"></div>
+        <div id="programme" class="grid-container"></div>
+        <div id="unten" style="display: grid;grid-template-columns: 100%;grid-row-gap: 3px;"></div>
+        <a href="/system" id="version"></a>
+        <button onclick="websocket.send(new Uint8Array([67]).buffer)" class="footer button">
+        	<span class="content">abbrechen</span>
+        </button>
+    </body>
+</html>

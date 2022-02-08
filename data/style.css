@@ -1,0 +1,140 @@
+html {
+	font-family: Arial;
+	display: inline-block;
+	text-align: center;
+}
+h4 {
+	margin: 5px 0;
+}
+.bi.bi-x-circle {
+    margin-left: 3px;
+}
+#debug td {
+    font-size: x-large;
+}
+.button {
+	display: inline-block;
+	background-color: #2196F3;
+	border: none;
+	color: #fff;
+	padding: 12px;
+	font-size: 30px;
+	cursor: pointer;
+	margin: 3px;
+	overflow: clip;
+}
+.progress-button {
+    position: relative;
+}
+.running {
+	background-color: #ccc !important;
+}
+.button .content {
+    position: relative;
+    display: block;
+	z-index: 10;
+    transition: transform 0.3s;
+}
+.progress-button .progress-inner {
+    position: absolute;
+    width: 0%;
+    left: 0;
+	top: 0;
+    background-color: #2196F3;
+	height: 100%;
+    transition: width 0.3s, opacity 0.3s;
+}
+.grid-container {
+	display: grid;
+	grid-template-columns: 50% auto;
+}
+body {
+	max-width: 600px;
+	margin: 0px auto;
+	padding-bottom: 25px;
+}
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 120px;
+	height: 68px;
+}
+.switch input {
+	display: none;
+}
+.slider {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	border-radius: 34px;
+}
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 52px;
+	width: 52px;
+	left: 8px;
+	bottom: 8px;
+	background-color: #fff;
+	-webkit-transition: .4s;
+	transition: .4s;
+	border-radius: 68px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+input:checked+.slider {
+	background-color: #2196F3;
+}
+input:checked+.slider:before {
+	-webkit-transform: translateX(52px);
+	transform: translateX(52px);
+}
+.footer {
+	position: fixed;
+	bottom: -3px;
+	left: -3px;
+	width: 100%;
+}
+.content_sub {
+    font-size: small;
+    padding-left: 12px;
+}
+#debug, #version {
+	padding-left: 5px;
+}
+#version {
+	left: 5px;
+	bottom: 67px;
+	position: fixed;
+}
+#debug tr td:first-child {
+    padding-right: 10px;
+    font-weight: bold;
+}
+h4 {
+    grid-column: 1 / 3;
+    grid-row: 1;
+}
+.pillow {
+    background-color: #ccc;    
+    border-radius: 5px;
+    text-align: left;
+    padding: 10px 10px;
+    font-size: x-large;
+}
+.pillow span {
+    background-image: url(/cross.png);
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    vertical-align: middle;
+}
+
+
